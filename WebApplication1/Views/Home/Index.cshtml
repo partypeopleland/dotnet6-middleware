@@ -1,0 +1,11 @@
+﻿@using ClassLibrary1
+@inject MyWallet myWallet;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+
+    <h2>@myWallet.Name:@ViewData["myMoney"]</h2>
+</div>
